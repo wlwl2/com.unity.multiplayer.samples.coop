@@ -10,7 +10,9 @@
         "Unity.Services.Authentication",
         "Unity.Services.Relay",
         "Unity.Netcode.Adapter.UTP",
-        "Unity.Collections"
+        "Unity.Collections",
+        "ClientNetworkTransform",
+        "Unity.Netcode.Components"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
