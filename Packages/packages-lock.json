@@ -32,11 +32,10 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.collab-proxy": {
-      "version": "1.15.7",
+      "version": "1.15.12",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.nuget.newtonsoft-json": "2.0.0",
         "com.unity.services.core": "1.0.1"
       },
       "url": "https://packages.unity.com"
@@ -75,7 +74,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.visualstudio": {
-      "version": "2.0.12",
+      "version": "2.0.14",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -142,19 +141,19 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.netcode.adapter.utp": {
-      "version": "1.0.0-pre.5",
+      "version": "https://github.com/Unity-Technologies/com.unity.netcode.gameobjects.git?path=/com.unity.netcode.adapter.utp#develop",
       "depth": 0,
-      "source": "registry",
+      "source": "git",
       "dependencies": {
         "com.unity.netcode.gameobjects": "1.0.0-pre.5",
-        "com.unity.transport": "1.0.0-pre.12"
+        "com.unity.transport": "1.0.0-pre.13"
       },
-      "url": "https://packages.unity.com"
+      "hash": "4a7e85d28aab1ef88790458e5b46b140149ea0f3"
     },
     "com.unity.netcode.gameobjects": {
-      "version": "1.0.0-pre.5",
+      "version": "https://github.com/Unity-Technologies/com.unity.netcode.gameobjects.git?path=/com.unity.netcode.gameobjects#develop",
       "depth": 0,
-      "source": "registry",
+      "source": "git",
       "dependencies": {
         "com.unity.modules.animation": "1.0.0",
         "com.unity.modules.physics": "1.0.0",
@@ -162,7 +161,7 @@
         "com.unity.nuget.mono-cecil": "1.10.1",
         "com.unity.collections": "1.1.0"
       },
-      "url": "https://packages.unity.com"
+      "hash": "4a7e85d28aab1ef88790458e5b46b140149ea0f3"
     },
     "com.unity.nuget.mono-cecil": {
       "version": "1.10.1",
@@ -353,7 +352,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.transport": {
-      "version": "1.0.0-pre.12",
+      "version": "1.0.0-pre.13",
       "depth": 1,
       "source": "registry",
       "dependencies": {
