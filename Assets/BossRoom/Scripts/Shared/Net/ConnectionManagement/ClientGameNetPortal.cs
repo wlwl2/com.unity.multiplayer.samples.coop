@@ -203,7 +203,7 @@ namespace Unity.Multiplayer.Samples.BossRoom.Client
                     await UnityRelayUtilities.JoinRelayServerFromJoinCode(joinCode);
 
                 await m_LobbyServiceFacade.UpdatePlayerRelayInfoAsync(allocationIdBytes.ToString(), joinCode);
-                utp.SetClientRelayData(ipv4Address, port, allocationIdBytes, key, connectionData, hostConnectionData, isSecure: true);
+                utp.SetRelayServerData(ipv4Address, port, allocationIdBytes, key, connectionData, hostConnectionData);
             }
             catch (Exception e)
             {

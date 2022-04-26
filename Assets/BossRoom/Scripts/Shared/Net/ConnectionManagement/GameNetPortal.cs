@@ -212,7 +212,7 @@ namespace Unity.Multiplayer.Samples.BossRoom
                         await m_LobbyServiceFacade.UpdatePlayerRelayInfoAsync(allocationIdBytes.ToString(), joinCode);
 
                         // we now need to set the RelayCode somewhere :P
-                        utp.SetHostRelayData(ipv4Address, port, allocationIdBytes, key, connectionData, isSecure: true);
+                        utp.SetRelayServerData(ipv4Address, port, allocationIdBytes, key, connectionData);
                     }
                     catch (Exception e)
                     {
