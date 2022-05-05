@@ -306,6 +306,7 @@ namespace Unity.Multiplayer.Samples.BossRoom.Server
 
             //The "BossRoom" server always advances to CharSelect immediately on start. Different games
             //may do this differently.
+            //todo: this shouldn't be the case in Zoo. Should be configurable
             SceneLoaderWrapper.Instance.LoadScene("CharSelect", useNetworkSceneManager: true);
         }
 
