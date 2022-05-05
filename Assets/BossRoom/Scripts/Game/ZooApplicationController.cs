@@ -12,10 +12,7 @@ using UnityEngine.SceneManagement;
 
 namespace Unity.Multiplayer.Samples.BossRoom.Shared
 {
-    /// <summary>
-    /// An entry point to the application, where we bind all the common dependencies to the root DI scope.
-    /// </summary>
-    public class ApplicationController : MonoBehaviour
+    public class ZooApplicationController : MonoBehaviour
     {
         [SerializeField] UpdateRunner m_UpdateRunner;
         [SerializeField] GameNetPortal m_GameNetPortal;
@@ -67,8 +64,8 @@ namespace Unity.Multiplayer.Samples.BossRoom.Shared
             scope.BindBufferedMessageChannelInstance<LobbyListFetchedMessage>();
 
             //all the lobby service stuff, bound here so that it persists through scene loads
-            scope.BindAsSingle<AuthenticationServiceFacade, IAuthenticationServiceFacade>(); //a manager entity that allows us to do anonymous authentication with unity services
-            scope.BindAsSingle<LobbyServiceFacade, ILobbyServiceFacade>();
+            scope.BindAsSingle<ZooAuthenticationServiceFacade, IAuthenticationServiceFacade>(); //a manager entity that allows us to do anonymous authentication with unity services
+            scope.BindAsSingle<ZooLobbyServiceFacade, ILobbyServiceFacade>();
 
             scope.FinalizeScopeConstruction();
 

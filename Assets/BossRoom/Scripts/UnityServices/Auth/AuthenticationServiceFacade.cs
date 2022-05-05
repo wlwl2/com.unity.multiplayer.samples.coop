@@ -8,7 +8,7 @@ using UnityEngine;
 
 namespace BossRoom.Scripts.Shared.Net.UnityServices.Auth
 {
-    public class AuthenticationServiceFacade
+    public class AuthenticationServiceFacade : IAuthenticationServiceFacade
     {
         IPublisher<UnityServiceErrorMessage> m_UnityServiceErrorMessagePublisher;
 

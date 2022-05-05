@@ -15,7 +15,7 @@ namespace Unity.Multiplayer.Samples.BossRoom.Shared.Net.UnityServices.Lobbies
     /// <summary>
     /// An abstraction layer between the direct calls into the Lobby API and the outcomes you actually want.
     /// </summary>
-    public class LobbyServiceFacade : IDisposable
+    public class LobbyServiceFacade : IDisposable, ILobbyServiceFacade
     {
         readonly LobbyAPIInterface m_LobbyApiInterface;
         readonly UpdateRunner m_UpdateRunner;
@@ -120,7 +120,7 @@ namespace Unity.Multiplayer.Samples.BossRoom.Shared.Net.UnityServices.Lobbies
             return task;
         }
 
-        async void UpdateLobby(float unused)
+        public async void UpdateLobby(float unused)
         {
             if (!m_RateLimitQuery.CanCall)
             {
