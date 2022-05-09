@@ -1,0 +1,16 @@
+{
+    "name": "Unity.Multiplayer.Samples.BossRoom.UI",
+    "rootNamespace": "",
+    "references": [
+        "GUID:ec2e12d3de28e40839f9a0b685184f49"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
