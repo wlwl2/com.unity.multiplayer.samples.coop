@@ -1,9 +1,9 @@
 {
-    "name": "Unity.Multiplayer.Samples.BossRoom.Audio",
+    "name": "BossRoom.Messages",
     "rootNamespace": "",
     "references": [
-        "GUID:7e7eb1694d1364b39a9f73ec3e5f0465",
-        "GUID:ec2e12d3de28e40839f9a0b685184f49"
+        "GUID:a25f0ffa19ad742068007858b0f799fe",
+        "GUID:1491147abca9d7d4bb7105af628b223e"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

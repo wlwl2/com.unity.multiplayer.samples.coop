@@ -1,0 +1,21 @@
+{
+    "name": "BossRoom.NetworkEntities",
+    "rootNamespace": "",
+    "references": [
+        "GUID:2dcdee88537144d699c239c0c2ad253a",
+        "GUID:ec2e12d3de28e40839f9a0b685184f49",
+        "GUID:97d2bbd727c6b404cad8396e4cde7843",
+        "GUID:1491147abca9d7d4bb7105af628b223e",
+        "GUID:a25f0ffa19ad742068007858b0f799fe",
+        "GUID:4c919e28f3f24e4fbc36bca72afa4e2d"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

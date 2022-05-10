@@ -1,16 +1,8 @@
 using System;
-using Unity.Netcode;
 using UnityEngine;
 
 namespace Unity.Multiplayer.Samples.BossRoom
 {
-    public enum LifeState
-    {
-        Alive,
-        Fainted,
-        Dead,
-    }
-
     /// <summary>
     /// Describes how the character's movement should be animated: as standing idle, running normally,
     /// magically slowed, sped up, etc. (Not all statuses are currently used by game content,

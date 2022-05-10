@@ -3,7 +3,7 @@
     "rootNamespace": "",
     "references": [
         "Unity.Netcode.Runtime",
-        "Unity.Multiplayer.Samples.BossRoom.Gameplay"
+        "BossRoom.ScriptableObjectArchitecture"
     ],
     "includePlatforms": [
         "Editor"

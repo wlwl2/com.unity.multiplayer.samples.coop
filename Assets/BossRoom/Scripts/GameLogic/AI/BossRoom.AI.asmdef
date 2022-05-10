@@ -1,9 +1,13 @@
 {
-    "name": "Unity.Multiplayer.Samples.BossRoom.Audio",
+    "name": "NewAssembly",
     "rootNamespace": "",
     "references": [
-        "GUID:7e7eb1694d1364b39a9f73ec3e5f0465",
-        "GUID:ec2e12d3de28e40839f9a0b685184f49"
+        "GUID:83419be3416104769811ad3bc3b2b4f3",
+        "GUID:0e311bea1f344f6baa949696e70dbd0c",
+        "GUID:362a2f31dde24f80beaefdfe84af22ad",
+        "GUID:bd8505afe345841b5b0c4d284f600df5",
+        "GUID:1eeb6b9cfb4948f3aa0a63988d9611ec",
+        "GUID:1491147abca9d7d4bb7105af628b223e"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

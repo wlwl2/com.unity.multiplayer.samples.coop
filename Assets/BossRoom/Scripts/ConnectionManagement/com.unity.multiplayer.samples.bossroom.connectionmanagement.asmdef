@@ -1,7 +1,15 @@
 {
     "name": "Unity.Multiplayer.Samples.BossRoom.ConnectionManagement",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "Unity.Multiplayer.Samples.Utilities",
+        "Unity.Multiplayer.Samples.BossRoom.Infrastructure",
+        "BossRoom.Utils",
+        "Unity.Multiplayer.Samples.BossRoom.UnityServices",
+        "Unity.Netcode.Runtime",
+        "Unity.Services.Lobbies",
+        "Unity.Services.Authentication"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

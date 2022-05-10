@@ -143,7 +143,8 @@ namespace Unity.Multiplayer.Samples.BossRoom.Server
         /// <param name="actionType"></param>
         public virtual void OnGameplayActivity(GameplayActivity activityType) { }
 
-        /// <summary>
+
+         /// <summary>
         /// Factory method that creates Actions from their request data.
         /// </summary>
         /// <param name="parent">The component that owns the ActionPlayer this action is running on. </param>
