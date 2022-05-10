@@ -7,7 +7,11 @@
         "GUID:97d2bbd727c6b404cad8396e4cde7843",
         "GUID:1491147abca9d7d4bb7105af628b223e",
         "GUID:a25f0ffa19ad742068007858b0f799fe",
-        "GUID:4c919e28f3f24e4fbc36bca72afa4e2d"
+        "GUID:4c919e28f3f24e4fbc36bca72afa4e2d",
+        "GUID:20468f2d2e0d440428d5f556013b41da",
+        "GUID:a2210af67d4f4bfb9f54c42d66ae4864",
+        "GUID:62eebbb0b230482fb03222e33ae0ba09",
+        "Unity.Multiplayer.Samples.Utilities"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

@@ -1,4 +1,4 @@
 {
   "name": "com.unity.multiplayer.samples.bossroom.applicationlifecycle",
-  "references":[ "GUID:ec2e12d3de28e40839f9a0b685184f49", "GUID:2dcdee88537144d699c239c0c2ad253a", "GUID:e3abc1ceb6eae4836a8ff106702e66e5" ]
+  "references":[ "GUID:ec2e12d3de28e40839f9a0b685184f49", "GUID:2dcdee88537144d699c239c0c2ad253a", "GUID:e3abc1ceb6eae4836a8ff106702e66e5", "GUID:4c919e28f3f24e4fbc36bca72afa4e2d", "GUID:824f9cd713b4b4e4e9d9e6385bad547a" ]
 }

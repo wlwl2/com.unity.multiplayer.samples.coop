@@ -54,7 +54,7 @@ namespace Unity.Multiplayer.Samples.BossRoom.Server
                 return;
             }
 
-            var newAction = ActionFactory.MakeAction(m_Parent, ref action);
+            var newAction = Action.MakeAction(m_Parent, ref action);
             m_Queue.Add(newAction);
             if (m_Queue.Count == 1) { StartAction(); }
         }
