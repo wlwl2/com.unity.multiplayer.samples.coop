@@ -36,12 +36,12 @@ namespace Unity.Multiplayer.Samples.BossRoom.Visual
         [SerializeField]
         private Color m_LoseLightColor;
 
-        ApplicationController m_ApplicationController;
+        IPublisher<QuitGameSessionMessage> m_QuitPublisher;
 
         [Inject]
-        void InjectDependencies(ApplicationController applicationController)
+        void InjectDependencies( IPublisher<QuitGameSessionMessage> quitPublisher)
         {
-            m_ApplicationController = applicationController;
+            m_QuitPublisher = quitPublisher;
         }
 
         void Start()
@@ -92,7 +92,7 @@ namespace Unity.Multiplayer.Samples.BossRoom.Visual
 
         public void OnMainMenuClicked()
         {
-            m_ApplicationController.LeaveSession(true);
+            m_QuitPublisher.Publish(new QuitGameSessionMessage(){UserRequested = true});
         }
     }
 }

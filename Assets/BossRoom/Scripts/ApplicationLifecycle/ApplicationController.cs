@@ -47,6 +47,9 @@ namespace Unity.Multiplayer.Samples.BossRoom.Shared
             scope.BindAsSingle<LocalLobbyUser>();
             scope.BindAsSingle<LocalLobby>();
 
+            scope.BindMessageChannelInstance<QuitGameSessionMessage>();
+            scope.BindAsSingle<GameSessionQuittingHandler>();
+
             //these message channels are essential and persist for the lifetime of the lobby and relay services
             scope.BindMessageChannelInstance<UnityServiceErrorMessage>();
             scope.BindMessageChannelInstance<ConnectStatus>();
@@ -122,22 +125,6 @@ namespace Unity.Multiplayer.Samples.BossRoom.Shared
                 StartCoroutine(LeaveBeforeQuit());
             }
             return canQuit;
-        }
-
-        public void LeaveSession(bool UserRequested)
-        {
-            m_LobbyServiceFacade.EndTracking();
-
-            if (UserRequested)
-            {
-                // first disconnect then return to menu
-                var gameNetPortal = GameNetPortal.Instance;
-                if (gameNetPortal != null)
-                {
-                    gameNetPortal.RequestDisconnect();
-                }
-            }
-            SceneLoaderWrapper.Instance.LoadScene("MainMenu", useNetworkSceneManager: false);
         }
 
         public void QuitGame()

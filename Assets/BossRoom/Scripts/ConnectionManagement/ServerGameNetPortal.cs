@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using BossRoom.Scripts.GameLogic.GameData;
 using Unity.Collections;
 using Unity.Multiplayer.Samples.BossRoom.Client;
 using Unity.Multiplayer.Samples.BossRoom.Shared.Infrastructure;
@@ -230,7 +231,7 @@ namespace Unity.Multiplayer.Samples.BossRoom.Server
 
         ConnectStatus GetConnectStatus(ConnectionPayload connectionPayload)
         {
-            if (m_Portal.NetManager.ConnectedClientsIds.Count >= CharSelectData.k_MaxLobbyPlayers)
+            if (m_Portal.NetManager.ConnectedClientsIds.Count >= Constants.k_MaxLobbyPlayers)
             {
                 return ConnectStatus.ServerFull;
             }

@@ -1,4 +1,25 @@
 {
-  "name": "com.unity.multiplayer.bossroom.gamelogic",
-  "references":[ "GUID:62eebbb0b230482fb03222e33ae0ba09", "GUID:1eeb6b9cfb4948f3aa0a63988d9611ec", "GUID:a2210af67d4f4bfb9f54c42d66ae4864" ]
+    "name": "com.unity.multiplayer.bossroom.gamelogic",
+    "rootNamespace": "",
+    "references": [
+        "GUID:62eebbb0b230482fb03222e33ae0ba09",
+        "GUID:1eeb6b9cfb4948f3aa0a63988d9611ec",
+        "GUID:a2210af67d4f4bfb9f54c42d66ae4864",
+        "GUID:ec2e12d3de28e40839f9a0b685184f49",
+        "GUID:e3abc1ceb6eae4836a8ff106702e66e5",
+        "GUID:2dcdee88537144d699c239c0c2ad253a",
+        "GUID:e9e5562f77c754b2ca364915385b3d43",
+        "GUID:7592a7a780e849fa8eca92cb650cd127",
+        "GUID:83419be3416104769811ad3bc3b2b4f3",
+        "GUID:20468f2d2e0d440428d5f556013b41da"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

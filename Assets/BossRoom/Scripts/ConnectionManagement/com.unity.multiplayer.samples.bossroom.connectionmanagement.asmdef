@@ -7,8 +7,13 @@
         "BossRoom.Utils",
         "Unity.Multiplayer.Samples.BossRoom.UnityServices",
         "Unity.Netcode.Runtime",
+        "Unity.Networking.Transport",
         "Unity.Services.Lobbies",
-        "Unity.Services.Authentication"
+        "Unity.Services.Authentication",
+        "com.unity.multiplayer.samples.bossroom.gamedata",
+        "com.unity.multiplayer.samples.bossroom.gamelogic.messages",
+        "BossRoom.ScriptableObjectArchitecture",
+        "Unity.Services.Core"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

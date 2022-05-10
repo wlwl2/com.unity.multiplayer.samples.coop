@@ -150,6 +150,7 @@ namespace Unity.Multiplayer.Samples.BossRoom.Server
         {
             get
             {
+                //todo: character class should be passed into constructor so that static lookup through GameDataSource is not needed (it will help untangling assemblies)
                 return GameDataSource.Instance.CharacterDataByType[m_ServerCharacter.NetState.CharacterType];
             }
         }
