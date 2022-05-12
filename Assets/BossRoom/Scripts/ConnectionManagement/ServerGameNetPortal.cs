@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using BossRoom.Scripts.GameLogic.GameData;
 using Unity.Collections;
 using Unity.Multiplayer.Samples.BossRoom.Client;
 using Unity.Multiplayer.Samples.BossRoom.Shared.Infrastructure;

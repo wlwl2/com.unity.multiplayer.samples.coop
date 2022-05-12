@@ -7,7 +7,9 @@
         "Unity.Multiplayer.Samples.Utilities.Testing",
         "Unity.Netcode.Runtime",
         "Unity.Multiplayer.Samples.BossRoom.Gameplay",
-        "Unity.Multiplayer.Samples.BossRoom.Infrastructure"
+        "Unity.Multiplayer.Samples.BossRoom.Infrastructure",
+        "Unity.Multiplayer.Samples.BossRoom.UI",
+        "com.unity.multiplayer.samples.bossroom.gamestate"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

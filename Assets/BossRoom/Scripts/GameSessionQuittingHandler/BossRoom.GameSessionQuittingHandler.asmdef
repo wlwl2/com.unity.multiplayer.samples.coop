@@ -1,16 +1,13 @@
 {
-    "name": "com.unity.multiplayer.bossroom.gamelogic",
+    "name": "BossRoom.GameSessionQuittingHandler",
     "rootNamespace": "",
     "references": [
+        "GUID:7592a7a780e849fa8eca92cb650cd127",
         "GUID:ec2e12d3de28e40839f9a0b685184f49",
         "GUID:e3abc1ceb6eae4836a8ff106702e66e5",
+        "GUID:2dcdee88537144d699c239c0c2ad253a",
         "GUID:e9e5562f77c754b2ca364915385b3d43",
-        "GUID:7592a7a780e849fa8eca92cb650cd127",
-        "GUID:20468f2d2e0d440428d5f556013b41da",
-        "GUID:1491147abca9d7d4bb7105af628b223e",
-        "GUID:3b8ed52f1b5c64994af4c4e0aa4b6c4b",
-        "GUID:a259fc59085b3433497b22f48ea46802",
-        "GUID:a25f0ffa19ad742068007858b0f799fe"
+        "GUID:1491147abca9d7d4bb7105af628b223e"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
