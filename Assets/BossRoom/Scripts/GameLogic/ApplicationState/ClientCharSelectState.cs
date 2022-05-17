@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using BossRoom.Scripts.GameLogic.GameData;
 using UnityEngine;
 using TMPro;
 using Unity.Netcode;
@@ -432,7 +433,7 @@ namespace Unity.Multiplayer.Samples.BossRoom.Client
         {
             if (gameObject.scene.rootCount > 1) // Hacky way for checking if this is a scene object or a prefab instance and not a prefab definition.
             {
-                while (m_PlayerSeats.Count < CharSelectData.k_MaxLobbyPlayers)
+                while (m_PlayerSeats.Count < Constants.MaxLobbyPlayers)
                 {
                     m_PlayerSeats.Add(null);
                 }

@@ -115,6 +115,8 @@ namespace Unity.Multiplayer.Samples.BossRoom
 
         // ACTION SYSTEM
 
+        //todo: Action callbacks
+
         /// <summary>
         /// This event is raised on the server when an action request arrives
         /// </summary>

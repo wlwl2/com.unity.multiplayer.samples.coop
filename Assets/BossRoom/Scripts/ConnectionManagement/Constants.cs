@@ -2,6 +2,6 @@ namespace BossRoom.Scripts.GameLogic.GameData
 {
     public static class Constants
     {
-        public const int k_MaxLobbyPlayers = 8;
+        public const int MaxLobbyPlayers = 8;
     }
 }

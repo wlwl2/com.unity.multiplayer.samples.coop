@@ -4,6 +4,7 @@ using Unity.Multiplayer.Samples.BossRoom.Visual;
 
 namespace Unity.Multiplayer.Samples.BossRoom.Client
 {
+    //todo: removable bridge
     [RequireComponent(typeof(NetworkCharacterState))]
     public class ClientCharacter : NetworkBehaviour
     {

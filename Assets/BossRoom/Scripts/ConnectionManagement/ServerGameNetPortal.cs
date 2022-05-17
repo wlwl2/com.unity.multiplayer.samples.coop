@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using BossRoom.Scripts.GameLogic.GameData;
 using Unity.Collections;
 using Unity.Multiplayer.Samples.BossRoom.Client;
 using Unity.Multiplayer.Samples.BossRoom.Shared.Infrastructure;
@@ -187,6 +188,9 @@ namespace Unity.Multiplayer.Samples.BossRoom.Server
             // Approval check happens for Host too, but obviously we want it to be approved
             if (clientId == NetworkManager.Singleton.LocalClientId)
             {
+
+                //todo: REFACTOR we don't need to assign a random avatar - instead later ABSENCE of preset avatar should be interpreted as "pick a random one"
+                //todo: maybe send a ConnecitonApproved message, where a separate handler could actually tackle this (similar to how GameSessionQuittingHandler)
                 SessionManager<SessionPlayerData>.Instance.SetupConnectingPlayerSessionData(clientId, m_Portal.GetPlayerId(),
                     new SessionPlayerData(clientId, m_Portal.PlayerName, m_Portal.AvatarRegistry.GetRandomAvatar().Guid.ToNetworkGuid(), 0, true));
 
@@ -230,7 +234,7 @@ namespace Unity.Multiplayer.Samples.BossRoom.Server
 
         ConnectStatus GetConnectStatus(ConnectionPayload connectionPayload)
         {
-            if (m_Portal.NetManager.ConnectedClientsIds.Count >= Constants.k_MaxLobbyPlayers)
+            if (m_Portal.NetManager.ConnectedClientsIds.Count >= Constants.MaxLobbyPlayers)
             {
                 return ConnectStatus.ServerFull;
             }

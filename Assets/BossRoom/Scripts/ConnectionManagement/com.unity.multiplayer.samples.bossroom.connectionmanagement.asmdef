@@ -10,7 +10,6 @@
         "Unity.Networking.Transport",
         "Unity.Services.Lobbies",
         "Unity.Services.Authentication",
-        "com.unity.multiplayer.bossroom.gamelogic",
         "com.unity.multiplayer.samples.bossroom.gamelogic.messages",
         "BossRoom.ScriptableObjectArchitecture",
         "Unity.Services.Core"

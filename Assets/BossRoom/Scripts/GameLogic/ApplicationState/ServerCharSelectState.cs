@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using BossRoom.Scripts.GameLogic.GameData;
 using Unity.Multiplayer.Samples.Utilities;
 using Unity.Netcode;
 using UnityEngine;
@@ -197,7 +198,7 @@ namespace Unity.Multiplayer.Samples.BossRoom.Server
 
         int GetAvailablePlayerNumber()
         {
-            for (int possiblePlayerNumber = 0; possiblePlayerNumber < CharSelectData.k_MaxLobbyPlayers; ++possiblePlayerNumber)
+            for (int possiblePlayerNumber = 0; possiblePlayerNumber < Constants.MaxLobbyPlayers; ++possiblePlayerNumber)
             {
                 if (IsPlayerNumberAvailable(possiblePlayerNumber))
                 {

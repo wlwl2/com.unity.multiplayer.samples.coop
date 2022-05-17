@@ -78,6 +78,7 @@ namespace Unity.Multiplayer.Samples.BossRoom
 
         public NetworkManager NetManager => m_NetworkManager;
 
+        //todo: add a custom message
         [SerializeField]
         AvatarRegistry m_AvatarRegistry;
 
