@@ -33,6 +33,7 @@ namespace BossRoom.Scripts.Shared.Net.UnityServices.Auth
             {
                 var reason = $"{e.Message} ({e.InnerException?.Message})";
                 m_UnityServiceErrorMessagePublisher.Publish(new UnityServiceErrorMessage("Authentication Error", reason, UnityServiceErrorMessage.Service.Authentication, e));
+                Debug.LogException(e);
                 throw;
             }
         }
@@ -51,6 +52,7 @@ namespace BossRoom.Scripts.Shared.Net.UnityServices.Auth
             }
             catch (Exception e)
             {
+                Debug.LogException(e);
                 var reason = $"{e.Message} ({e.InnerException?.Message})";
                 m_UnityServiceErrorMessagePublisher.Publish(new UnityServiceErrorMessage("Authentication Error", reason, UnityServiceErrorMessage.Service.Authentication, e));
                 throw;
@@ -71,6 +73,7 @@ namespace BossRoom.Scripts.Shared.Net.UnityServices.Auth
             }
             catch (AuthenticationException e)
             {
+                Debug.LogException(e);
                 var reason = $"{e.Message} ({e.InnerException?.Message})";
                 m_UnityServiceErrorMessagePublisher.Publish(new UnityServiceErrorMessage("Authentication Error", reason, UnityServiceErrorMessage.Service.Authentication, e));
                 //not rethrowing for authentication exceptions - any failure to authenticate is considered "handled failure"
@@ -78,6 +81,7 @@ namespace BossRoom.Scripts.Shared.Net.UnityServices.Auth
             }
             catch (Exception e)
             {
+                Debug.LogException(e);
                 //all other exceptions should still bubble up as unhandled ones
                 var reason = $"{e.Message} ({e.InnerException?.Message})";
                 m_UnityServiceErrorMessagePublisher.Publish(new UnityServiceErrorMessage("Authentication Error", reason, UnityServiceErrorMessage.Service.Authentication, e));
