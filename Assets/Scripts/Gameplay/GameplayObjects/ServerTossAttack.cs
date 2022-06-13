@@ -1,3 +1,4 @@
+using Gameplay.GameplayObjects;
 using Unity.Netcode;
 using UnityEngine;
 
@@ -36,6 +37,9 @@ namespace Unity.Multiplayer.Samples.BossRoom.Server
         float m_DestroyAfterSeconds;
 
         bool m_Detonated;
+        
+        [SerializeField]
+        NetworkTossAttackState m_NetState;
 
         public override void OnNetworkSpawn()
         {
@@ -75,6 +79,8 @@ namespace Unity.Multiplayer.Samples.BossRoom.Server
                     }
                 }
             }
+            
+            m_NetState.DetonateClientRPC();
 
             m_Detonated = true;
         }
